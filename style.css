@@ -1,0 +1,400 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.border-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+  }
+  
+  .border-line {
+  
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 750ms ease-in-out;
+  
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .btn:hover .border-line {
+    stroke-dasharray: 100 0;
+  }
+/******** navbar Section *******/
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarlogo{
+    width:165px ;
+    height: 90px;
+    margin-left: 40px;
+    background-image: url("img/navbarlogo.png");
+    background-size: cover;
+}
+.listitems{
+    display: flex;
+    margin-inline-end: 50px;
+}
+.listitems li{
+    list-style: none;
+}
+.listitems li a{
+    color:whitesmoke;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+/******** Home Section *******/
+
+
+.homesection{
+    background-image: url("img/homebg1.jpg");
+    height: 604px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.homesection h1 {
+    color: white;
+    font-size: 4.0rem;
+    margin-top: 180px;
+    background-color: black;
+}
+
+.homesection h4{
+    color: white;
+    font-size: 2.0rem;
+    margin-top: 10px;
+    background-color: black;
+
+}
+.btn {
+    width: 8em;
+    height: 2.0em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: relative;
+    margin: 20px;
+    border: 0;
+    cursor: pointer;
+    background-color: #fbee47;
+    color: #000000;
+    text-align: center;
+    transition: background 200ms ease-in-out;
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  
+  }
+
+/*
+.homesection button{
+    background-color: #fbee47;
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+    font-family:'Bebas Neue', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+}*/
+
+/****** down Section ******/
+
+.downsection{
+    background-color: black;
+    width: 100%;
+    height: 704px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.downabout{
+    background-color: #fbee47;
+    width: 700px;
+    height: 550px;
+    margin-right: 500px;
+
+    
+}
+.downimg{
+    background-image: url("img/downimg3.jpg");
+    width: 575px;
+    height: 460px;
+    background-size: cover;
+    margin-left: 600px;
+    position: absolute;
+
+}
+
+.downabout div{
+    width: 450px;
+    height: 400px;
+    margin-top: 140px;
+    margin-left: 90px;
+}
+
+.downabout h2{
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+
+}
+.downabout p{
+    text-align: left;
+    line-height: 25px;
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+/****** gallery section Section ******/
+
+
+/****** Service Section ******/
+
+
+.servicesection{
+
+    background-color: black;
+    width: 100%;
+    height: 1204px;
+   
+
+}
+.servicesection h1{
+    color: white;
+
+}
+
+.servicesection div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+.servicesection div h1{
+
+    margin: 40px;
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2.2rem;
+    
+
+
+}
+.sectionfirst{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+}
+.sectionsecond{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+}
+
+.sectionthird{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+
+
+}
+.sectionforth{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+
+
+}
+.sectionfifth{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+
+
+}
+.sectionsixth{
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:
+    translate 0.5s,
+    box-shadow 0.5s;
+
+
+}
+
+
+.sectionfirst:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+.sectionsecond:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+.sectionthird:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+.sectionforth:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+.sectionfifth:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+.sectionsixth:hover {
+    translate: 0 -30px;
+    box-shadow:
+    5px 3px rgb(242, 240, 217),
+    10px 6px rgb(132, 132, 66),
+    15px 9px #fbee47;
+}
+
+/****** footer ******/
+
+.footerbar{
+
+    width: 100%;
+    height: 250px;
+    background-color: #fbee47;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+
+}
+.footericon{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.coloumfirst h2{
+    margin-bottom: 15px;
+
+}
+
+.coloumthird div{
+    width: 380px;
+    height: 100px;
+    margin-top: 11px;
+
+}
+
+.coloumthird input{
+    height: 40px;
+    width:300px;
+    background-color: #fbee47;
+    color: black;
+    border: 2px solid black;
+
+
+}
+
+.coloumthird button{
+    height: 42px;
+    width: 70px;
+    background-color: black;
+    color: #fbee47;
+    border: 2px solid black;
+    font-size: 1.0rem;
+}
+
+
+
